@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Design Using Grid View</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .header{
+            text-align: center;
+            background-color: lightcoral;
+            padding: 1% 5%;
+            color: white;
+        }
+        .nav{
+            background-color: lightseagreen;
+            padding: 1% 5%;
+
+        }
+        .nav a{
+            text-decoration: none;
+            display: block;
+            padding: 1% 5%;
+            font-size: 1.2rem;
+            color: white;
+        }
+        .main{
+            background-color: rgb(45, 37, 163);
+            padding: 1% 5%;
+        }
+        .aside{
+            background-color: magenta;
+            padding: 1% 5%;
+        }
+        .footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            font-size: 1rem;
+            padding: 1% 5%;
+        }
+        .col-1 {width: 8.33%;}
+        .col-2 {width: 16.66%;}
+        .col-3 {width: 25%;}
+        .col-4 {width: 33.33%;}
+        .col-5 {width: 41.66%;}
+        .col-6 {width: 50%;}
+        .col-7 {width: 58.33%;}
+        .col-8 {width: 66.66%;}
+        .col-9 {width: 75%;}
+        .col-10 {width: 83.33%;}
+        .col-11 {width: 91.66%;}
+        .col-12 {width: 100%;}
+
+        [class*="col-"]{
+            float: left;
+            padding: 10px;
+        }
+        .row::after{
+            content: '';
+            clear: both;
+            display: table;
+        }
+        @media screen and (max-width: 600px) {
+            [class*="col-"]{
+                width: 100%;
+            }
+            .nav a{
+            text-decoration: none;
+            display: block;
+            color: white;
+            text-align: center;
+            margin: 10px;
+            background-color: tomato;
+            border-radius: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Ajmain Nishu</h1>
+    </div>
+    <div class="row">
+        <div class="nav col-2">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+        <div class="main col-7">
+            <h1>I am a Web Developer</h1>
+            <p>At sit amet ipsum et sea sed amet dolores. Vero dolor sadipscing amet eirmod diam, sed et ipsum et gubergren clita sed, at et ut vero justo kasd et ea. Stet dolor dolores sea consetetur aliquyam vero amet ipsum justo. Et eirmod amet nonumy gubergren tempor sit et ipsum, lorem voluptua sed kasd voluptua sadipscing invidunt sit diam, justo et at eos sadipscing sadipscing. Voluptua ipsum lorem vero ea sed ipsum. Diam vero aliquyam stet eos aliquyam, rebum elitr vero at eos et, diam vero sed takimata voluptua kasd elitr tempor et sit, et kasd dolores et dolore erat justo.Vexed bade despair will had with which power fondly to, whilome was long mine saw mood, strength knew uses his he venerable but to childe, ah true control venerable a, light misery and not the sight in said. And along heal but objects save nor a. By left though not goodly harold or ear shameless a, by beyond to he worse they, aught did loved a know cheer, favour that nor cared not. Be goodly plain now one days prose, in parting did his did disappointed awake from, at by take haply knew hope. Cell eremites name her that, whence.</p>
+            <p>Erat sit accusam consetetur lorem elitr gubergren stet sanctus ut sed. Dolor amet sit lorem et duo sed sed amet, et diam rebum vero et stet, justo accusam no eos voluptua diam rebum kasd magna et, erat amet consetetur invidunt et. Dolore diam consetetur dolore ea justo clita lorem vero, nonumy et lorem sanctus ut diam et, invidunt sit dolor lorem justo ut amet stet. Dolor elitr consetetur ipsum ea ipsum diam voluptua et lorem, dolore at clita at gubergren aliquyam ea, ea sed sanctus vero duo rebum, eos est nonumy invidunt erat sadipscing aliquyam rebum, est diam duo tempor dolores sit rebum. Dolores erat amet nonumy elitr dolores nonumy, et consetetur est ut stet tempor. Takimata invidunt sanctus duo sit et, sanctus voluptua elitr accusam no lorem, et erat eirmod ipsum ea aliquyam et, aliquyam vero amet duo stet ea nonumy lorem et sanctus. At est eos dolor lorem.</p>
+        </div>
+        <div class="aside col-3">
+            <h3>HTML</h3>
+            <p>Ea dolor et tempor sit at dolore nonumy dolores eos justo. Sanctus eos sit dolor dolore aliquyam sed sed elitr,.</p>
+
+            <h3>CSS</h3>
+            <p>Ea dolor et tempor sit at dolore nonumy dolores eos justo. Sanctus eos sit dolor dolore aliquyam sed sed elitr,.</p>
+
+            <h3>JS</h3>
+            <p>Ea dolor et tempor sit at dolore nonumy dolores eos justo. Sanctus eos sit dolor dolore aliquyam sed sed elitr,.</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        &copy;Ajmain Nishu
+    </div>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table in CSS</title>
+    <style>
+        table{
+            border: 1px black solid;
+            border-collapse: separate;
+            border-spacing: 15px 10px;
+            empty-cells: hide;
+        }
+        caption{
+            border: 1px black solid;
+            caption-side: bottom;
+            font-size: 3pc;
+        }
+        th,td{
+            border: 1px black solid;
+            padding: 10px;
+            text-align: center;
+        }
+        th{
+            background-color: chartreuse;
+            height: 30px;
+            vertical-align: top;
+        }
+       
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Info</caption>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>GPA</th>
+                <th>Bio</th>
+                <th>Phone</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>101</td>
+                <td>Ajmain</td>
+                <td>3.03</td>
+                <td>Lorem magna no lorem ipsum est sit lorem duo nonumy invidunt, diam rebum est diam consetetur sit dolores. Magna gubergren duo kasd ipsum et. Dolor ut amet sit amet. Takimata voluptua voluptua ut takimata magna sea ut eos consetetur. Vero ut sit diam takimata lorem stet consetetur, ipsum erat consetetur.</td>
+                <td>123456</td>
+            </tr>
+            <tr>
+                <td>102</td>
+                <td>Iqtidar</td>
+                <td>3.36</td>
+                <td>Lorem magna no lorem ipsum est sit lorem duo nonumy invidunt, diam rebum est diam consetetur sit dolores. Magna gubergren duo kasd ipsum et. Dolor ut amet sit amet. Takimata voluptua voluptua ut takimata magna sea ut eos consetetur. Vero ut sit diam takimata lorem stet consetetur, ipsum erat consetetur.</td>
+                <td>123456</td>
+            </tr>
+            <tr>
+                <td>103</td>
+                <td>Rahman</td>
+                <td>3.63</td>
+                <td>Lorem magna no lorem ipsum est sit lorem duo nonumy invidunt, diam rebum est diam consetetur sit dolores. Magna gubergren duo kasd ipsum et. Dolor ut amet sit amet. Takimata voluptua voluptua ut takimata magna sea ut eos consetetur. Vero ut sit diam takimata lorem stet consetetur, ipsum erat consetetur.</td>
+                <td>123456</td>
+            </tr>
+            <tr>
+                <td>104</td>
+                <td>Nishu</td>
+                <td>2.03</td>
+                <td>Lorem magna no lorem ipsum est sit lorem duo nonumy invidunt, diam rebum est diam consetetur sit dolores. Magna gubergren duo kasd ipsum et. Dolor ut amet sit amet. Takimata voluptua voluptua ut takimata magna sea ut eos consetetur. Vero ut sit diam takimata lorem stet consetetur, ipsum erat consetetur.</td>
+                
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

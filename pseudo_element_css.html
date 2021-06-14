@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Element in CSS</title>
+    <style>
+        h1::first-letter{
+            color: tomato;
+        }
+        p::first-line{
+            color:violet;
+        }
+        h2::after{
+            content:">";
+        }
+        h2::before{
+            content: "<";
+        }
+    </style>
+</head>
+<body>
+    <h1>Bangladesh</h1>
+    <br><br>
+    <p>At elitr et et amet erat dolor consetetur gubergren sit, sed eos diam dolore diam et et sit, ut eos dolor lorem eirmod rebum, et at diam ea sadipscing. Et amet tempor est vero, ea kasd dolor eos no rebum.</p>
+    <br><br>
+    <h2>Australia</h2>
+</body>
+</html>

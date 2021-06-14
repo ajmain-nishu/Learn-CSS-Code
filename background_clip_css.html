@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Clip in CSS</title>
+    <style>
+        .text{
+            background-color: tomato;
+            padding: 20px;
+            border: 25px dotted yellow;
+            font-size: 40px;
+            background-clip: border-box;
+        }
+        .text1{
+            background-color: tomato;
+            padding: 20px;
+            border: 25px dotted yellow;
+            font-size: 40px;
+            background-clip: padding-box;
+        }
+        .text2{
+            background-color: tomato;
+            padding: 20px;
+            border: 25px dotted yellow;
+            font-size: 40px;
+            background-clip: content-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="text">
+        <p>Et justo et stet et sea lorem, sanctus clita lorem lorem ea clita. Eos lorem lorem clita lorem, dolor sed et et sadipscing, magna et consetetur dolore est sit dolores stet gubergren, dolores dolor nonumy consetetur duo magna consetetur invidunt.</p>
+    </div>
+    <br><br><br><br><br><br>
+    <div class="text1">
+        <p>Et justo et stet et sea lorem, sanctus clita lorem lorem ea clita. Eos lorem lorem clita lorem, dolor sed et et sadipscing, magna et consetetur dolore est sit dolores stet gubergren, dolores dolor nonumy consetetur duo magna consetetur invidunt.</p>
+    </div>
+    <br><br><br><br><br><br>
+    <div class="text2">
+        <p>Et justo et stet et sea lorem, sanctus clita lorem lorem ea clita. Eos lorem lorem clita lorem, dolor sed et et sadipscing, magna et consetetur dolore est sit dolores stet gubergren, dolores dolor nonumy consetetur duo magna consetetur invidunt.</p>
+    </div>
+</body>
+</html>

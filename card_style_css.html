@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Style Using CSS</title>
+    <style>
+        .container{
+            box-sizing: border-box;
+            display: flex;
+            padding: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .card{
+            width: 300px;
+            margin: 40px;
+            box-sizing: border-box;
+            box-shadow: 2px 2px 4px black;
+            
+        }
+        .img{
+            width: 100%;
+        }
+        .card-body{
+            padding: 5px;
+        }
+        .card-title{
+            font-size: 2rem;
+            text-align: center;
+        }
+        .card-para{
+            text-align: justify;
+            line-height: 1.3;
+        }
+        .card:hover{
+            box-shadow: 13px 43px 29px hotpink;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img class="img" src="iron.jpg" alt="Iron Man">
+            <div class="card-body">
+                <div class="card-title">
+                    HTML
+                </div>
+                <div class="card-para">
+                    <p>Aliquyam stet diam dolores amet sed sadipscing amet amet eirmod. Vero diam justo dolore vero consetetur sit at dolor. Duo diam est clita dolor dolor eos, et eos sit stet ea invidunt no ea dolor, at ipsum diam stet ipsum sadipscing dolore. Dolore ea ut sit sit kasd stet vero.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img class="img" src="pokemon.jpg" alt="Pokeman">
+            <div class="card-body">
+                <div class="card-title">
+                    HTML
+                </div>
+                <div class="card-para">
+                    <p>Aliquyam stet diam dolores amet sed sadipscing amet amet eirmod. Vero diam justo dolore vero consetetur sit at dolor. Duo diam est clita dolor dolor eos, et eos sit stet ea invidunt no ea dolor, at ipsum diam stet ipsum sadipscing dolore. Dolore ea ut sit sit kasd stet vero.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img class="img" src="messi.jpg" alt="Lionel Messi">
+            <div class="card-body">
+                <div class="card-title">
+                    HTML
+                </div>
+                <div class="card-para">
+                    <p>Aliquyam stet diam dolores amet sed sadipscing amet amet eirmod. Vero diam justo dolore vero consetetur sit at dolor. Duo diam est clita dolor dolor eos, et eos sit stet ea invidunt no ea dolor, at ipsum diam stet ipsum sadipscing dolore. Dolore ea ut sit sit kasd stet vero.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

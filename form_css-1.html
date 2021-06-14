@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form in CSS</title>
+    <style>
+        textarea{
+            resize: none;
+        }
+        input[type=button], input[type=reset]{
+            border: none;
+            background-color: hotpink;
+            color: white;
+            padding: 8px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        select{
+            border:none
+        }
+        select option{
+            background-color: yellowgreen;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <textarea name="" id="" cols="30" rows="10">Write here</textarea>
+        <br>
+        <input type="button" value="Submit">
+        <input type="reset" value="Reset">
+        <br><br>
+        <select name="subject" id="subject">
+            <option value="c">C</option>
+            <option value="java">Java</option>
+        </select>
+</body>
+</html>

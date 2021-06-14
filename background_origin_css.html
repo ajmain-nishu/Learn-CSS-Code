@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Origin in CSS</title>
+    <style>
+        .img{
+            background-image: url('pokemon.jpg');
+            width: 1000px;
+            height: 550px;
+            border: 25px dotted yellow;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-origin: border-box;
+        }
+        .img1{
+            background-image: url('pokemon.jpg');
+            width: 1000px;
+            height: 550px;
+            border: 25px dotted yellow;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-origin: padding-box;
+        }
+        .img2{
+            background-image: url('flower.jpg');
+            border: 25px dotted yellow;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-origin: content-box;
+            font-size: 40px;
+            text-align: center;
+            padding: 30px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="img"></div>
+    <br><br><br><br><br><br><br><br><br>
+    <div class="img1"></div>
+    <br><br><br><br><br><br><br><br><br>
+    <div class="img2">
+        <p>Ut et et et clita eos sit ipsum sanctus dolores, rebum gubergren dolore dolor est. Diam justo invidunt ipsum tempor..</p>
+    </div>
+    <br><br><br><br><br><br><br><br><br>
+</body>
+</html>

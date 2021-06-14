@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List in CSS</title>
+    <style>
+        .list{
+            list-style-type: circle;
+            list-style-position: inside;
+            list-style-image: url("tick.png");
+            
+        }
+        .list li{
+            border: 1px solid black;
+        }
+
+        .list1{
+            list-style-type: circle;
+            list-style-position: outside;
+            list-style-image: url("tick.png");
+            
+        }
+        .list1 li{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="list">
+        <ul>
+            <li>html</li>
+            <li>css</li>
+            <li>jquery</li>
+        </ul>
+    </div>
+
+    <div class="list1">
+        <ul>
+            <li>html</li>
+            <li>css</li>
+            <li>jquery</li>
+        </ul>
+    </div>
+</body>
+</html>

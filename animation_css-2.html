@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation in CSS</title>
+    <style>
+        img{
+            width: 300px;
+            height: 300px;
+            display: block;
+            margin: 0 auto;
+            margin-top: 100px;
+            border: 5px solid black;
+            border-radius: 50%;
+            animation-name: ani;
+            animation-duration: 1s;
+            position: relative;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+        @keyframes ani {
+            0%{
+                top: 0;
+                left: 0;
+            }
+            50%{
+                top: 100px;
+                left: 0;
+                opacity: 0.5;
+            }
+            75%{
+                top: 40px;
+                left: 40px;
+            }
+            100%{
+                top: 0;
+                left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="iron.jpg" alt="Iron Man">
+</body>
+</html>

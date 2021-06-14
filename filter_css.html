@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Filter in CSS</title>
+    <style>
+        img{
+            width: 30%;
+            float: left;
+            margin: 3px;
+        }
+        .a{
+            filter: blur(2px);
+        }
+        .b{
+            filter: brightness(200%);
+        }
+        .c{
+            filter: contrast(270%);
+        }
+        .d{
+            filter:grayscale(100%)
+        }
+        .e{
+            filter: invert(100%);
+        }
+        .f{
+            filter: opacity(30%);
+        }
+        .g{
+            filter: saturate(5);
+        }
+        .h{
+            filter: sepia(100%);
+        }
+        .i{
+            filter: drop-shadow(8px 16px 5px green);
+        }
+    </style>
+</head>
+<body>
+    <img src="flower.jpg" alt="Flower">
+    <br><br><br><br>
+    <img class="a" src="flower.jpg" alt="Flower">
+    <br><br><br><br>
+    <img class="b" src="flower.jpg" alt="Flower">
+    <br><br><br><br>
+    <img class="c" src="flower.jpg" alt="Flower">
+    <br><br><br><br>
+    <img class="d" src="flower.jpg" alt="Flower">
+    <br><br><br><br>
+    <img class="e" src="flower.jpg" alt="Flower">
+    <br><br><br><br>
+    <img class="f" src="flower.jpg" alt="Flower">
+    <br><br><br><br>
+    <img class="g" src="flower.jpg" alt="Flower">
+    <br><br><br><br>
+    <img class="h" src="flower.jpg" alt="Flower">
+    <br><br><br><br>
+    <img class="i" src="flower.jpg" alt="Flower">
+    <br><br><br><br>
+</body>
+</html>

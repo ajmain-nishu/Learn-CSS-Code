@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable in CSS</title>
+    <style>
+        :root{
+            --primary-color:green;
+            --secondary-color: hotpink;
+        }
+        h1{
+            color: var(--primary-color);
+        }
+        h2{
+            color: var(--secondary-colo, blue);
+        }
+        @media screen and (max-width: 800px) {
+            :root{
+            --primary-color:blue;
+            --secondary-color: yellow;
+        }
+        }
+    </style>
+</head>
+<body>
+    <h1>Bangladesh</h1>
+    <h2>Australia</h2>
+</body>
+</html>

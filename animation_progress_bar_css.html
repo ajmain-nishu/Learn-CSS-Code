@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Progress Bar in CSS</title>
+    <style>
+        .skill{
+            background-color: gray;
+            width: 500px;
+            padding: 20px;
+        }
+        .skill li{
+            list-style-type: none;
+            margin: 50px 0;
+            font-weight: bold;
+            position: relative;
+        }
+        .skill li::before{
+            content: '';
+            position: absolute;
+            width: 100%;
+            top: calc(100% + 5px);
+            background-color: greenyellow;
+            height: 20px;
+            border-radius: 1000px;
+        }
+        .skill li::after{
+            content: '';
+            position: absolute;
+            top: calc(100% + 5px);
+            background-color: green;
+            width: 0;
+            left: 0;
+            height: 20px;
+            border-radius: 1000px;
+
+            animation-timing-function: linear;
+            animation-duration: 3s;
+            animation-delay: 1s;
+            animation-fill-mode: forwards;
+
+        }
+        .skill li.html::after{
+            animation-name: html;
+        }
+        @keyframes html {
+            to{
+                width: 98%;
+            }
+        }
+
+        .skill li.css::after{
+            animation-name: css;
+        }
+        @keyframes css {
+            to{
+                width: 90%;
+            }
+        }
+
+        .skill li.js::after{
+            animation-name: js;
+        }
+        @keyframes js {
+            to{
+                width: 70%;
+            }
+        }
+
+        .skill li.jq::after{
+            animation-name: jq;
+        }
+        @keyframes jq {
+            to{
+                width: 80%;
+            }
+        }
+
+        .skill li.bs::after{
+            animation-name: bs;
+        }
+        @keyframes bs {
+            to{
+                width: 30%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="skill">
+        <ul>
+            <li class="html">HTML</li>
+            <li class="css">CSS</li>
+            <li class="js">JavaScript</li>
+            <li class="jq">JQuery</li>
+            <li class="bs">Bootstrap</li>
+        </ul>
+    </div>
+</body>
+</html>

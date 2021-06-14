@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation in CSS</title>
+    <style>
+        img{
+            width: 300px;
+            height: 300px;
+            display: block;
+            margin: 0 auto;
+            margin-top: 100px;
+            border: 10px solid black;
+            border-radius: 50%;
+        }
+        img:hover{
+            animation-name: ani;
+            animation-duration: 3s;
+            animation-fill-mode: forwards;
+        }
+        @keyframes ani {
+            0%{
+                border-color: black;
+            }
+            50%{
+                border-color: green;
+            }
+            100%{
+                border-color: yellow;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="iron.jpg" alt="Iron Man">
+</body>
+</html>

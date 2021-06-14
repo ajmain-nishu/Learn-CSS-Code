@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Layout in CSS</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            background-color: cyan;
+            
+            
+        }
+        .child{
+            padding: 15px;
+            background-color: burlywood;
+            margin: 14px;
+        }
+        #one{
+            flex-grow: 1;
+        }
+        #two{
+            flex-grow: 2;
+        }
+        #three{
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="one" class="child">One</div>
+        <div id="two" class="child">Two</div>
+        <div id="three" class="child">Three</div>
+    </div>
+</body>
+</html>

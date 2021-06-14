@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conic Gradiant in CSS</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .box{
+            border: 2px solid gray;
+            width: 200px;
+            height: 200px;
+            margin: 20px;
+            border-radius: 50%;
+            float: left;
+        }
+
+        .b9{
+            background-image: repeating-conic-gradient(rgba(0,0,0,0) 0deg,rgba(0,0,0,0) 20deg,rgba(0,0,0,.5) 20deg, rgba(0,0,0,.5) 30deg);
+            background-color: gray;
+        }
+
+        .b10{
+            background-image: repeating-conic-gradient(yellow 0deg,yellow 90deg,black 90deg, black 180deg);
+        }
+
+        .b11{
+            background-image: repeating-conic-gradient(yellow 0deg,yellow 90deg,black 90deg, black 180deg);
+            background-size: 20px;
+        }
+
+        .b12{
+            background-image: repeating-conic-gradient(yellow 0deg,yellow 90deg,black 90deg, black 180deg);
+            background-size: 20px 20px;
+        }
+        
+        .b13{
+            background-image: conic-gradient(yellow 0deg,yellow 90deg,red 90deg, red 180deg,blue 180deg,blue 270deg,green 270deg, green 360deg);
+        }
+
+        .b14{
+            background-image: conic-gradient(from -45deg,yellow 0deg,yellow 90deg,red 90deg, red 180deg,blue 180deg,blue 270deg,green 270deg, green 360deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="box b9"></div>
+    <div class="box b10"></div>
+    <div class="box b11"></div>
+    <div class="box b12"></div>
+    <div class="box b13"></div>
+    <div class="box b14"></div>
+</body>
+</html>

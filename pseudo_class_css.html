@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Class in CSS</title>
+    <style>
+        a.link:hover{
+            color: tomato;
+        }
+        input:focus{
+            background-color: tomato;
+        }
+        table,td{
+            border: 1px black solid;
+            border-collapse: collapse;
+        }
+        tr:nth-child(even){
+            background-color: tomato;
+        }
+    </style>
+</head>
+<body>
+    <a href="#">Home</a>
+    <a href="#" class="link">About</a>
+    <br><br>
+    <input type="text" name="name" id="name" placeholder="text">
+    <br><br>
+    <table>
+        <tbody>
+            <tr>
+                <td>Name</td>
+                <td>Age</td>
+            </tr>
+            <tr>
+                <td>Nishu</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>Ajmain</td>
+                <td>21</td>
+            </tr>
+            <tr>
+                <td>Iqtidar</td>
+                <td>22</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
