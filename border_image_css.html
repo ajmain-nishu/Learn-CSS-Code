@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Image in CSS</title>
+    <style>
+        
+       h1 {
+           border: 4px solid black;
+           border-image-source: linear-gradient(red, green);
+           border-image-slice: 1;
+           border-image-width: 8px;
+           border-image-outset: 2;
+           border-image-repeat: round;
+       }
+
+       h3 {
+            border: 4px solid black;
+            border-image: linear-gradient(red, green) 1 / 8px / 2 round;
+       }
+        
+    </style>
+</head>
+<body>
+    <h1>Bangladesh</h1>
+
+    <br><br><br>
+
+    <h3>Australia</h3>
+</body>
+</html>
